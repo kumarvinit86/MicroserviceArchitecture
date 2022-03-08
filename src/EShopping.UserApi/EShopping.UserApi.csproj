@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>50c77eca-2416-412f-ab81-bbfa651ee94a</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EShopping.Common\EShopping.Common.csproj" />
+		<ProjectReference Include="..\EShopping.User.Core\EShopping.User.Core.csproj" />
+	</ItemGroup>
+
+</Project>
